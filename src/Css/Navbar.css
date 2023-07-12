@@ -1,0 +1,57 @@
+
+.navbar-main{
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    background-color: white;   
+}
+
+.nav-equip9-image{
+    height: 2.9rem;
+    width: 6rem;
+    border-radius: 0.3rem;
+}
+.navbar-links-log-in,
+.navbar-links-Sign-up{
+    background-color: #a435f0;
+    color: white;
+    border-radius: 0.3rem;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0 .8rem;
+    justify-content: center;
+    font-weight: 500;
+    height: 2.7rem;
+    width: 100px;
+    letter-spacing: -.02rem;
+    font-size: 1rem;
+    margin-left: .4rem;
+    text-decoration: none;
+}
+
+.avatar-div{
+    padding-left: 1rem;
+}
+.log-out-a-div a{
+    color: #1c1d1f;
+}
+.log-out-a-div{
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+.after-login-name-email-main-div{
+    padding: 0.5rem;
+    border-bottom: 1px solid #d1d7dc;
+}
+.log-out-user-name{
+    margin-left: 0.6rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.log-out-email{
+    margin-left: 0.6rem;
+    
+}
