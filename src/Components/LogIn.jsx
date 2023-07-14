@@ -75,8 +75,6 @@ const LogIn = () => {
                     </>
                   }
                   variant="outlined"
-                  type="tel"
-                  inputMode="numeric"
                   error={!!errors.mobile_no}
                   helperText={errors.mobile_no?.message?.toString()}
                   {...register('mobile_no', {
