@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className="d-flex">
             {user.admin === 1 ? (
               <div>
-                <NavLink className="navbar-links-log-in" to="/Crud">
+                <NavLink className="navbar-links" to="/Crud">
                   CRUD
                 </NavLink>
               </div>
@@ -61,14 +61,14 @@ const Navbar = () => {
               <HtmlTooltip
                 title={
                   <>
-                    <div className="d-flex after-login-name-email-main-div">
+                    <div className="d-flex avatar-hover-container">
                       <div>
-                        <div className="log-out-user-name">{capitalizeFirstLetter(user?.first_name)}</div>
+                        <div className="avatar-hover-container-username">{capitalizeFirstLetter(user?.first_name)}</div>
                       </div>
                     </div>
 
-                    <div className="log-out-a-div">
-                      <Button onClick={logoutUser}>Log out</Button>
+                    <div className="avatar-hover-container-logout-wrapper">
+                      <Button onClick={logoutUser}><span className="avatar-hover-container-logout">Log out</span></Button>
                     </div>
                   </>
                 }
@@ -82,12 +82,12 @@ const Navbar = () => {
         ) : (
           <div className="d-flex">
             <div>
-              <NavLink className="navbar-links-log-in" to="/Registration">
+              <NavLink className="navbar-links" to="/Registration">
                 Sign Up
               </NavLink>
             </div>
             <div>
-              <NavLink className="navbar-links-log-in" to="/LogIn">
+              <NavLink className="navbar-links" to="/LogIn">
                 Log In
               </NavLink>
             </div>

@@ -5,7 +5,7 @@
     margin: 5rem;
 }
 .home-page-card {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08), 0px 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   padding: 16px;
   background-color: #ffffff;

@@ -6,14 +6,13 @@
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     background-color: white;   
 }
-
 .nav-equip9-image{
     height: 2.9rem;
     width: 6rem;
     border-radius: 0.3rem;
 }
-.navbar-links-log-in,
-.navbar-links-Sign-up{
+
+.navbar-links{
     background-color: #a435f0;
     color: white;
     border-radius: 0.3rem;
@@ -35,23 +34,21 @@
 .avatar-div{
     padding-left: 1rem;
 }
-.log-out-a-div a{
-    color: #1c1d1f;
+.avatar-hover-container-logout-wrapper{
+    padding: 0.9rem;
 }
-.log-out-a-div{
+.avatar-hover-container-logout{
     font-size: 1rem;
-    padding: 0.6rem;
+    font-weight: 700;
+    color: #1F51FF;
 }
-.after-login-name-email-main-div{
+.avatar-hover-container{
     padding: 0.5rem;
     border-bottom: 1px solid #d1d7dc;
 }
-.log-out-user-name{
+.avatar-hover-container-username{
     margin-left: 0.6rem;
     font-weight: 700;
     font-size: 1rem;
 }
-.log-out-email{
-    margin-left: 0.6rem;
-    
-}
+

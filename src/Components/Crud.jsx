@@ -7,6 +7,7 @@ import '../Css/Crud.css';
 import { AppContext } from "../App";
 import axios from 'axios';
 
+
 const useStyles = makeStyles({
   TableContainer: {
     width: '100%',
@@ -55,6 +56,8 @@ const CRUD = () => {
   const handleEdit = (rowId, rowData) => {
     setEditRowId(rowId);
     setEditData({ ...rowData }); // Set initial editData state based on rowData
+    console.log(rowId);
+    console.log(rowData);
   };
 
   const handleCancel = () => {
@@ -75,7 +78,8 @@ const CRUD = () => {
 
   const handleDelete = async (mobile_no) => {
     try {
-      const response = await axios.delete('http://localhost:9000/users/Delete', { data: { mobile_no } });
+      const data = {mobile_no:mobile_no};
+      const response = await axios.delete('http://localhost:9000/users/Delete', {data});
       console.log(response);
       fetchData(); // Refresh the data after successful deletion
     } catch (error) {
@@ -136,7 +140,7 @@ const CRUD = () => {
                     </TableCell>
                     <TableCell>
                       {user.admin === 1 ? (
-                        <span>NA</span> // Display "-" in the Actions column for admin users
+                        <span className='NA-text'>NA</span> // Display "-" in the Actions column for admin users
                       ) : (
                         <>
                           {editRowId === index ? (
