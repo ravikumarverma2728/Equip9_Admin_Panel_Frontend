@@ -56,8 +56,6 @@ const CRUD = () => {
   const handleEdit = (rowId, rowData) => {
     setEditRowId(rowId);
     setEditData({ ...rowData }); // Set initial editData state based on rowData
-    console.log(rowId);
-    console.log(rowData);
   };
 
   const handleCancel = () => {

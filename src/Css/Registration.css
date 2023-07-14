@@ -56,5 +56,8 @@
 .redirect a{
     color: #5624d0;
 }
+.required-field{
+    color: red;
+}
 
 
